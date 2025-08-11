@@ -33,21 +33,13 @@ jobs:
         run: go build -o fshare-${{ matrix.goos }}-${{ matrix.goarch }} .
 
       - name: Create Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ github.ref_name }}
           name: Release ${{ github.ref_name }}
           body: |
-            New release from branch ${{ github.ref_name }}
+            New release from tags ${{ github.ref_name }}
           draft: false
           prerelease: false
-
-      - name: Upload Release Asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }} # Get upload URL from previous step
-          asset_path: ./fshare-${{ matrix.goos }}-${{ matrix.goarch }}
-          asset_name: fshare-${{ matrix.goos }}-${{ matrix.goarch }}
-          asset_content_type: application/octet-stream
+          files:
+            - fshare-${{ matrix.goos }}-${{ matrix.goarch }}
