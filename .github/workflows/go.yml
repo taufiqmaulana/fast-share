@@ -41,5 +41,4 @@ jobs:
             New release from tags ${{ github.ref_name }}
           draft: false
           prerelease: false
-          files:
-            - fshare-${{ matrix.goos }}-${{ matrix.goarch }}
+          files: fshare-${{ matrix.goos }}-${{ matrix.goarch }}
