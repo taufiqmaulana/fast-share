@@ -11,5 +11,5 @@ Name=Fast Share
 Terminal=true
 NoDisplay=true
 Icon=/home/$USER/.local/fast-share.app/icon.png
-Exec=/home/$USER/.local/fast-share.app/main "%f"
+Exec=/home/$USER/.local/fast-share.app/fshare "%f"
 EOL
