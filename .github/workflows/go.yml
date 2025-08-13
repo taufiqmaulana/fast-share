@@ -6,10 +6,15 @@ name: Go
 on:
   push:
     tags:
+<<<<<<< HEAD
       - "*"
+=======
+      - '*'
+>>>>>>> 7a44acdec090b9ab275cf858b96177c8a798c036
 
 jobs:
   build-and-release:
+    permissions: write-all
     runs-on: ubuntu-latest
     strategy:
       matrix:
