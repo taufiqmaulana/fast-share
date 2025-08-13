@@ -23,8 +23,10 @@ Run the following script
 ```bash
 $ fshare cool_me.jpg
 ```
+> [!WARNING]  
+> Make sure your `~/.local/bin` directory is configured in $PATH
 
-## Or
+### Or
 Its integrated to your linux DE via generated desktop file, so you can just `right click` on the file and then choose `open with` -> `Fast Share`
 
 ## Scan Qr or Open Link to Download
