@@ -3,6 +3,8 @@
 # 🏁 Fast Share
 Fastest way to share your file over same network on linux
 
+[![Go](https://github.com/taufiqmaulana/fast-share/actions/workflows/go.yml/badge.svg)](https://github.com/taufiqmaulana/fast-share/actions/workflows/go.yml)
+
 
 ## Features
 - It Fast
